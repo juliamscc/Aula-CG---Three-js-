@@ -32,7 +32,7 @@ group.add(mesh3)
 scene.add(group)
 
 group.scale.set( 1, 4, 4 )
-group.rotation.z = eulerToRad
+group.rotation.z = eulerToRad(180)
 
 //escala
 // mesh.scale.set( 2, 4, 1 )
