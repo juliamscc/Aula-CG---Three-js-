@@ -42,9 +42,10 @@ group.rotation.z = eulerToRad(180)
 // mesh.position.y = 2
 
 //rotação
-// mesh.rotation.x = eulerToRad(90) 
-// mesh.rotation.y = 1
-// mesh.rotation.z = 0.5
+group.rotation.reorder('XYZ')
+group.rotation.x = eulerToRad(90) 
+group.rotation.y = 1
+group.rotation.z = 0.5
 
 // scene.add(mesh)
 
@@ -63,6 +64,10 @@ camera.position.z = 10
 // camera.position.y = 1
 
 scene.add(camera)
+
+//Axes helper
+const axesHelper = new THREE.AxesHelper()
+scene.add(axesHelper)
 
 //renderizador
 const canvas = document.querySelector('.webgl')
